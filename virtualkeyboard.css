@@ -1,0 +1,174 @@
+.zqKeyBoard {
+    /* font-family: "Microsoft Yahei", "Hiragino Sans GB", tahoma, arial; */
+    position: fixed;
+    width: 100%;
+    border-top: 1px solid #999;
+    z-index: 99999;
+    /* transform: translate(-50%, -50%); */
+    user-select: none;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+    -webkit-overflow-scrolling: touch;
+}
+
+.inputZone {
+    background: #DBDBDB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px 0;
+}
+
+.inputZone > div {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+.inputZone span {
+    width: 8vw;
+    border-radius: 2vw;
+    height: 10vw;
+    text-align: center;
+    line-height: 10vw;
+    background: white;
+    display: inline-block;
+    cursor: pointer;
+    margin: 1vw;
+}
+
+.inputZone span:active {
+    background: #eee;
+}
+
+.keyboardOp {
+    height: 44px;
+    line-height: 44px;
+    /* font-size: 20px; */
+    /* cursor: move; */
+    background-color: white;
+}
+
+.keyboardOp > .slideDown {
+    float: right;
+    font-weight: bold;
+    color: darkviolet;
+    cursor: pointer;
+    /* padding: 0 20px; */
+    border-left: 1px solid #DBDBDB;
+    text-align: center;
+    width: 60px;
+}
+
+.keyboardOp > .slideDown:active {
+    background-color: #DBDBDB;
+    color: red;
+}
+
+.outputZone {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 40px;
+    line-height: 40px;
+    top: -40px;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.outputZone .zh-pinyin-letter {
+    /* font-size: 30px; */
+    font-weight: bold;
+    /* color: #dc4f42; */
+    margin-left: 16px;
+}
+
+.outputZoneOp {
+    float: right;
+    height: 40px;
+    line-height: 40px;
+}
+
+.outputZoneOp > span {
+    display: inline-block;
+    height: 100%;
+    padding: 0 8px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.outputZoneOp > span:active {
+    color: red;
+    background-color: #cccccc;
+}
+
+.outputZoneOp .unclick {
+    color: #999;
+    cursor: not-allowed;
+}
+.output-ZH{
+    width: 100vw;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+.output-ZH > li {
+    cursor: pointer;
+    float: left;
+    list-style: none;
+    width: 10vw;
+    text-align: center;
+}
+
+.output-ZH > li:active {
+    color: red;
+    background-color: #cccccc;
+}
+
+.zqKeyBoard .hide {
+    display: none;
+}
+
+.zqKeyBoard .blank {
+    /* width: 260px; */
+    width: 26vw;
+    /* font-size: 20px; */
+}
+
+.zqKeyBoard .symbol {
+    font-size: 18px;
+}
+
+.zqKeyBoard .func {
+    /* font-size: 20px; */
+    color: #9400d3;
+    width: 16vw;
+}
+/* 切换按钮的激活状态 */
+.switchActive{
+    font-size:20px;
+    font-weight:bold;
+}
+/* 切换按钮的非激活状态 */
+.switchInactive{
+    color: #a6a4a4;
+    font-size: 14px;
+}
+
+.deleteBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+/* 中文数字和字符键盘 */
+/* .zhSymbolZone{
+    display: none;
+} */
